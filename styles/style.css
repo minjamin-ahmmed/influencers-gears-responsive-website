@@ -1,0 +1,214 @@
+/* Fonts Embedded */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Shared Styles */
+.banner-text-heading{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 3.2rem;
+    font-weight: 700;
+    
+}
+
+.banner-text-description{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Banner CONTAINER */
+.banner-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.navigation{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-heading{
+    color: rgb(58, 58, 58);
+font-family: Poppins;
+font-size: 1.5rem;
+font-weight: 700;
+}
+
+.links{
+    list-style: none;
+    gap: 34px;
+}
+
+.link-items{
+    text-decoration: none;
+    color:rgb(58, 58, 58);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.banner-text-heading{
+    margin-bottom: 16px;
+}
+
+.banner-text-description{
+    margin-bottom: 16px;
+}
+
+.btn-primary{
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    padding: 10px 24px 10px 24px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+}
+
+.banner-element{
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.banner-image{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: 450px 450px;
+    max-width: 440px;
+}
+
+.banner-footer{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 36px 60px; 
+    justify-content: space-around;
+}
+
+
+/* Popular Collection Container Styles */
+.popular-collection-container{
+    max-width: 1047px;
+    margin: 0 auto;
+    /* border: 5px solid red; */
+}
+
+.popular-collection-heading{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.collection-card{
+    max-width: 329px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    border: 2px solid red;
+    padding: 15px;
+}
+.card-image{
+    max-width: 325px;
+   
+}
+
+.card-image{
+    width: 100%;
+   
+}
+
+.collection-card{
+    flex-direction: column;
+
+}
+
+.collection-header{
+    color: rgb(24, 25, 31);
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.collection-price{
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-weight: 400; 
+    margin-top: 16px;
+}
+
+
+/* Responsive Layout */
+@media screen and (max-width:576px) {
+
+    .banner-heading{
+        color: rgb(58, 58, 58);
+        font-family: Poppins;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .banner-container{
+        margin: 0 auto;
+    }
+
+    .banner-text-heading{
+        color: rgb(58, 58, 58);
+        font-family: Poppins;
+        font-size: 1.75rem;
+        font-weight: 700;
+        
+    }
+    .navigation,
+    .links{
+        flex-direction: column;
+    }
+
+    .banner-element{
+        flex-direction: column-reverse;
+    }
+
+    .links{
+        gap: 10px;
+    }
+
+    .banner-text-heading, 
+    .banner-text-description
+    {
+        text-align: center;
+        
+    }
+
+    .btn-primary{
+        margin-left: 110px;
+    }
+
+    .banner-element{
+        margin-bottom: 50px;
+    }
+
+    .banner-image{
+        width: 100%;
+    }
+
+    .banner-footer{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px; 
+        gap: 10px;
+        margin: 0;
+    }
+    
+}
