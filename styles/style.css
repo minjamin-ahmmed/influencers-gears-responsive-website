@@ -111,12 +111,11 @@ font-weight: 700;
     margin-bottom: 30px;
 }
 
-.collection-card{
+.collection-card-parent{
     max-width: 329px;
     border-radius: 5px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     background: rgb(255, 255, 255);
-    border: 2px solid red;
     padding: 15px;
 }
 .card-image{
@@ -134,11 +133,19 @@ font-weight: 700;
 
 }
 
+.popular-collection-image-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
 .collection-header{
     color: rgb(24, 25, 31);
     font-family: Poppins;
     font-size: 1.25rem;
     font-weight: 500;
+    margin: 0;
+    padding: 0;
 }
 
 .collection-price{
@@ -146,7 +153,29 @@ font-weight: 700;
     font-family: Inter;
     font-size: 1.5rem;
     font-weight: 400; 
-    margin-top: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.collection-description{
+    color: rgb(120, 120, 133);
+    font-family: Inter;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.button-container{
+    justify-content: end;
+}
+.btn-secondary{
+    color: rgba(224, 44, 109, 0.87);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+    
 }
 
 
@@ -209,6 +238,13 @@ font-weight: 700;
         padding: 10px; 
         gap: 10px;
         margin: 0;
+    }
+
+    .popular-collection-image-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
     }
     
 }
