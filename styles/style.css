@@ -79,6 +79,10 @@ font-weight: 700;
     justify-content: space-between;
     margin-bottom: 70px;
 }
+.image{
+    justify-content: center;
+    align-items: center;
+}
 
 .banner-image{
     background-image: url(../images/Circle\ design.svg);
@@ -100,6 +104,7 @@ font-weight: 700;
     max-width: 1047px;
     margin: 0 auto;
     /* border: 5px solid red; */
+    margin-bottom: 100px;
 }
 
 .popular-collection-heading{
@@ -137,6 +142,7 @@ font-weight: 700;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 .collection-header{
@@ -169,6 +175,7 @@ font-weight: 700;
 }
 .btn-secondary{
     color: rgba(224, 44, 109, 0.87);
+    background: none;
     font-family: Poppins;
     font-size: 1rem;
     font-weight: 700;
@@ -176,7 +183,52 @@ font-weight: 700;
     border: none;
     cursor: pointer;
     
+    
 }
+
+.item-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Featured Section Styles */
+.feature-products-container{
+    max-width: 1110px;
+    margin: 0 auto;
+    gap: 96px;
+    justify-content:center;
+    align-items: center;
+}
+.feature-text-container h1{
+    color: rgb(10, 8, 38);
+    font-family: Poppins;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0 auto;
+
+}
+
+.feature-text-container p{
+    color: rgb(108, 108, 108);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 16px;
+}
+
+.btn-third{
+    background: rgb(224, 44, 109);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 24px 10px 24px;
+    border: 1px solid rgb(224, 44, 109);
+
+}
+
 
 
 /* Responsive Layout */
@@ -201,7 +253,8 @@ font-weight: 700;
         
     }
     .navigation,
-    .links{
+    .links,
+    .feature-products-container{
         flex-direction: column;
     }
 
@@ -246,5 +299,16 @@ font-weight: 700;
         justify-content: center;
         align-items: center;
     }
+
+    .feature-products-container{
+        gap: 10px;
+    }
+
+    .feature-image-container{
+        max-width: 404px;
+    }
     
+    .feature-image-container img{
+        width: 100%;
+    }
 }
